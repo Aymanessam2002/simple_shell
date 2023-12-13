@@ -1,9 +1,6 @@
 #include "shell.h"
 
-/**
- * clear_info - initializes info_t struct
- * @info: struct address
- */
+
 void cleasdfo(info_t *info)
 {
 	info->arg = NULL;
@@ -12,11 +9,7 @@ void cleasdfo(info_t *info)
 	info->argc = 0;
 }
 
-/**
- * set_info - initializes info_t struct
- * @info: struct address
- * @av: argument vector
- */
+
 void sefsddsffo(info_t *info, char **av)
 {
 	int i = 0;
@@ -44,11 +37,7 @@ void sefsddsffo(info_t *info, char **av)
 	}
 }
 
-/**
- * free_info - frees info_t struct fields
- * @info: struct address
- * @all: true if freeing all fields
- */
+
 void fresdafo(info_t *info, int all)
 {
 	asdnksdakj(info->argv);

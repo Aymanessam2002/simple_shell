@@ -1,12 +1,6 @@
 #include "shell.h"
 
-/**
- * asdqwer - determines if a file is an executable command
- * @info: the info struct
- * @path: path to the file
- *
- * Return: 1 if true, 0 otherwise
- */
+
 int asdqwer(info_t *info, char *path)
 {
 	struct stat st;
@@ -22,14 +16,7 @@ int asdqwer(info_t *info, char *path)
 	return (0);
 }
 
-/**
- * er345 - duplicates characters
- * @pathstr: the PATH string
- * @start: starting index
- * @stop: stopping index
- *
- * Return: pointer to new buffer
- */
+
 char *er345(char *pathstr, int start, int stop)
 {
 	static char buf[1024];
@@ -42,14 +29,7 @@ char *er345(char *pathstr, int start, int stop)
 	return (buf);
 }
 
-/**
- * fds234 - finds this cmd in the PATH string
- * @info: the info struct
- * @pathstr: the PATH string
- * @cmd: the cmd to find
- *
- * Return: full path of cmd if found or NULL
- */
+
 char *fds234(info_t *info, char *pathstr, char *cmd)
 {
 	int i = 0, curr_pos = 0;

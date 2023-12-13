@@ -1,18 +1,13 @@
 #include "shell.h"
 
-/**
- * _erratoi - converts a string to an integer
- * @s: the string to be converted
- * Return: 0 if no numbers in string, converted number otherwise
- *       -1 on error
- */
+
 int _errahggfdftoi(char *s)
 {
 	int i = 0;
 	unsigned long int result = 0;
 
 	if (*s == '+')
-		s++;  /* TODO: why does this make main return 255? */
+		s++;  
 	for (i = 0;  s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
@@ -28,13 +23,7 @@ int _errahggfdftoi(char *s)
 	return (result);
 }
 
-/**
- * print_error - prints an error message
- * @info: the parameter & return info struct
- * @estr: string containing specified error type
- * Return: 0 if no numbers in string, converted number otherwise
- *        -1 on error
- */
+
 void priadsasnt_error(info_t *info, char *estr)
 {
 	asdasd435(info->fname);
@@ -46,13 +35,7 @@ void priadsasnt_error(info_t *info, char *estr)
 	asdasd435(estr);
 }
 
-/**
- * print_d - function prints a decimal (integer) number (base 10)
- * @input: the input
- * @fd: the filedescriptor to write to
- *
- * Return: number of characters printed
- */
+
 int prinsa20dsadt_d(int input, int fd)
 {
 	int (*__putchar)(char) = _putchar;
@@ -85,14 +68,7 @@ int prinsa20dsadt_d(int input, int fd)
 	return (count);
 }
 
-/**
- * convert_number - converter function, a clone of itoa
- * @num: number
- * @base: base
- * @flags: argument flags
- *
- * Return: string
- */
+
 char *consadvsadadsnumber(long int num, int base, int flags)
 {
 	static char *array;
@@ -121,12 +97,6 @@ char *consadvsadadsnumber(long int num, int base, int flags)
 	return (ptr);
 }
 
-/**
- * remove_comments - function replaces first instance of '#' with '\0'
- * @buf: address of the string to modify
- *
- * Return: Always 0;
- */
 void remov26565e_comments(char *buf)
 {
 	int i;
