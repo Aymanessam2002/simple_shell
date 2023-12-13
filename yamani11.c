@@ -6,27 +6,27 @@
  *
  * Return: size of list
  */
-size_t as66(const list_t *h)
+size_t as66(const listlist65_t *h)
 {
 	size_t i = 0;
 
 	while (h)
 	{
-		h = h->next;
+		h = h->neko;
 		i++;
 	}
 	return (i);
 }
 
 /**
- * list_to_strings - returns an array of strings of the list->str
+ * listlist65_to_strings - returns an array of strings of the list->str
  * @head: pointer to first node
  *
  * Return: array of strings
  */
-char **sd6(list_t *head)
+char **sd6(listlist65_t *head)
 {
-	list_t *node = head;
+	listlist65_t *node = head;
 	size_t i = as66(head), j;
 	char **strs;
 	char *str;
@@ -36,7 +36,7 @@ char **sd6(list_t *head)
 	strs = malloc(sizeof(char *) * (i + 1));
 	if (!strs)
 		return (NULL);
-	for (i = 0; node; node = node->next, i++)
+	for (i = 0; node; node = node->neko, i++)
 	{
 		str = malloc(_strlenadssad(node->str) + 1);
 		if (!str)
@@ -56,12 +56,12 @@ char **sd6(list_t *head)
 
 
 /**
- * print_list - prints all elements of a list_t linked list
+ * print_list - prints all elements of a listlist65_t linked list
  * @h: pointer to first node
  *
  * Return: size of list
  */
-size_t aiu12(const list_t *h)
+size_t aiu12(const listlist65_t *h)
 {
 	size_t i = 0;
 
@@ -72,14 +72,14 @@ size_t aiu12(const list_t *h)
 		_putchar(' ');
 		_puasdtsasd(h->str ? h->str : "(nil)");
 		_puasdtsasd("\n");
-		h = h->next;
+		h = h->neko;
 		i++;
 	}
 	return (i);
 }
 
 
-list_t *oo22(list_t *node, char *prefix, char c)
+listlist65_t *oo22(listlist65_t *node, char *prefix, char c)
 {
 	char *p = NULL;
 
@@ -88,13 +88,13 @@ list_t *oo22(list_t *node, char *prefix, char c)
 		p = sad_strcmp(node->str, prefix);
 		if (p && ((c == -1) || (*p == c)))
 			return (node);
-		node = node->next;
+		node = node->neko;
 	}
 	return (NULL);
 }
 
 
-ssize_t ll53(list_t *head, list_t *node)
+ssize_t ll53(listlist65_t *head, listlist65_t *node)
 {
 	size_t i = 0;
 
@@ -102,7 +102,7 @@ ssize_t ll53(list_t *head, list_t *node)
 	{
 		if (head == node)
 			return (i);
-		head = head->next;
+		head = head->neko;
 		i++;
 	}
 	return (-1);

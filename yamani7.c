@@ -1,7 +1,7 @@
 #include "shell.h"
 
 
-ssize_t input_buf(info_t *info, char **buf, size_t *len)
+ssize_t input_buf(inf12o_t *info, char **buf, size_t *len)
 {
 	ssize_t r = 0;
 	size_t len_p = 0;
@@ -24,7 +24,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 				(*buf)[r - 1] = '\0'; 
 				r--;
 			}
-			info->linecount_flag = 1;
+			info->linesdasdacodunt_flag = 1;
 			remov26565e_comments(*buf);
 			bu965st(info, *buf, info->histcount++);
 			
@@ -38,7 +38,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 }
 
 
-ssize_t gfgdfgdfgput(info_t *info)
+ssize_t gfgdfgdfgput(inf12o_t *info)
 {
 	static char *buf; 
 	static size_t i, j, len;
@@ -78,7 +78,7 @@ ssize_t gfgdfgdfgput(info_t *info)
 }
 
 
-ssize_t read_buf(info_t *info, char *buf, size_t *i)
+ssize_t read_buf(inf12o_t *info, char *buf, size_t *i)
 {
 	ssize_t r = 0;
 
@@ -91,7 +91,7 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
 }
 
 
-int _getline(info_t *info, char **ptr, size_t *length)
+int _getline(inf12o_t *info, char **ptr, size_t *length)
 {
 	static char buf[AYMAN_2002];
 	static size_t i, len;

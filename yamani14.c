@@ -1,7 +1,7 @@
 #include "shell.h"
 
 
-int int423erac12i2ve(info_t *info)
+int int423erac12i2ve(inf12o_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }

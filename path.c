@@ -1,7 +1,7 @@
 #include "shell.h"
 
 
-int asdqwer(info_t *info, char *path)
+int asdqwer(inf12o_t *info, char *path)
 {
 	struct stat st;
 
@@ -30,7 +30,7 @@ char *er345(char *pathstr, int start, int stop)
 }
 
 
-char *fds234(info_t *info, char *pathstr, char *cmd)
+char *fds234(inf12o_t *info, char *pathstr, char *cmd)
 {
 	int i = 0, curr_pos = 0;
 	char *path;

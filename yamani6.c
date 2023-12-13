@@ -2,7 +2,7 @@
 
 
 
-char *get5656ile(info_t *info)
+char *get5656ile(inf12o_t *info)
 {
 	char *buf, *dir;
 
@@ -19,11 +19,11 @@ char *get5656ile(info_t *info)
 	return (buf);
 }
 
-int wri6565ory(info_t *info)
+int wri6565ory(inf12o_t *info)
 {
 	ssize_t fd;
 	char *filename = get5656ile(info);
-	list_t *node = NULL;
+	listlist65_t *node = NULL;
 
 	if (!filename)
 		return (-1);
@@ -32,7 +32,7 @@ int wri6565ory(info_t *info)
 	free(filename);
 	if (fd == -1)
 		return (-1);
-	for (node = info->history; node; node = node->next)
+	for (node = info->myhistro; node; node = node->neko)
 	{
 		_puasdtsasdfdsdasd(node->str, fd);
 		_putfdasdasd('\n', fd);
@@ -43,7 +43,7 @@ int wri6565ory(info_t *info)
 }
 
 
-int rea96ory(info_t *info)
+int rea96ory(inf12o_t *info)
 {
 	int i, last = 0, linecount = 0;
 	ssize_t fd, rdlen, fsize = 0;
@@ -81,35 +81,35 @@ int rea96ory(info_t *info)
 	free(buf);
 	info->histcount = linecount;
 	while (info->histcount-- >= MOLP78)
-		jasdhj5456(&(info->history), 0);
+		jasdhj5456(&(info->myhistro), 0);
 	renumb3232tory(info);
 	return (info->histcount);
 }
 
 
-int bu965st(info_t *info, char *buf, int linecount)
+int bu965st(inf12o_t *info, char *buf, int linecount)
 {
-	list_t *node = NULL;
+	listlist65_t *node = NULL;
 
-	if (info->history)
-		node = info->history;
+	if (info->myhistro)
+		node = info->myhistro;
 	add5665end(&node, buf, linecount);
 
-	if (!info->history)
-		info->history = node;
+	if (!info->myhistro)
+		info->myhistro = node;
 	return (0);
 }
 
 
-int renumb3232tory(info_t *info)
+int renumb3232tory(inf12o_t *info)
 {
-	list_t *node = info->history;
+	listlist65_t *node = info->myhistro;
 	int i = 0;
 
 	while (node)
 	{
 		node->num = i++;
-		node = node->next;
+		node = node->neko;
 	}
 	return (info->histcount = i);
 }

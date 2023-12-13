@@ -1,7 +1,7 @@
 #include "shell.h"
 
 
-int dfs21(info_t *info, char *buf, size_t *p)
+int dfs21(inf12o_t *info, char *buf, size_t *p)
 {
 	size_t j = *p;
 
@@ -29,7 +29,7 @@ int dfs21(info_t *info, char *buf, size_t *p)
 }
 
 
-void dof5(info_t *info, char *buf, size_t *p, size_t i, size_t len)
+void dof5(inf12o_t *info, char *buf, size_t *p, size_t i, size_t len)
 {
 	size_t j = *p;
 
@@ -54,60 +54,60 @@ void dof5(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 }
 
 
-int ahh4(info_t *info)
+int ahh4(inf12o_t *info)
 {
 	int i;
-	list_t *node;
+	listlist65_t *node;
 	char *p;
 
 	for (i = 0; i < 10; i++)
 	{
-		node = oo22(info->alias, info->argv[0], '=');
+		node = oo22(info->alias, info->aasdsadrv123[0], '=');
 		if (!node)
 			return (0);
-		free(info->argv[0]);
+		free(info->aasdsadrv123[0]);
 		p = _stsdasdarchr(node->str, '=');
 		if (!p)
 			return (0);
 		p = _strcpysdasd(p + 1);
 		if (!p)
 			return (0);
-		info->argv[0] = p;
+		info->aasdsadrv123[0] = p;
 	}
 	return (1);
 }
 
 
-int replyyu6ars(info_t *info)
+int replyyu6ars(inf12o_t *info)
 {
 	int i = 0;
-	list_t *node;
+	listlist65_t *node;
 
-	for (i = 0; info->argv[i]; i++)
+	for (i = 0; info->aasdsadrv123[i]; i++)
 	{
-		if (info->argv[i][0] != '$' || !info->argv[i][1])
+		if (info->aasdsadrv123[i][0] != '$' || !info->aasdsadrv123[i][1])
 			continue;
 
-		if (!_strcmpdassad(info->argv[i], "$?"))
+		if (!_strcmpdassad(info->aasdsadrv123[i], "$?"))
 		{
-			uyt12(&(info->argv[i]),
+			uyt12(&(info->aasdsadrv123[i]),
 				  _strcpysdasd(consadvsadadsnumber(info->status, 10, 0)));
 			continue;
 		}
-		if (!_strcmpdassad(info->argv[i], "$$"))
+		if (!_strcmpdassad(info->aasdsadrv123[i], "$$"))
 		{
-			uyt12(&(info->argv[i]),
+			uyt12(&(info->aasdsadrv123[i]),
 				  _strcpysdasd(consadvsadadsnumber(getpid(), 10, 0)));
 			continue;
 		}
-		node = oo22(info->env, &info->argv[i][1], '=');
+		node = oo22(info->env, &info->aasdsadrv123[i][1], '=');
 		if (node)
 		{
-			uyt12(&(info->argv[i]),
+			uyt12(&(info->aasdsadrv123[i]),
 				  _strcpysdasd(_stsdasdarchr(node->str, '=') + 1));
 			continue;
 		}
-		uyt12(&info->argv[i], _strcpysdasd(""));
+		uyt12(&info->aasdsadrv123[i], _strcpysdasd(""));
 	}
 	return (0);
 }

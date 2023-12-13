@@ -1,7 +1,6 @@
 #include "shell.h"
 
-
-int assdfj(info_t *info, char **av)
+int assdfj(inf12o_t *info, char **av)
 {
 	ssize_t r = 0;
 	int builtin_ret = 0;
@@ -37,15 +36,14 @@ int assdfj(info_t *info, char **av)
 	return (builtin_ret);
 }
 
-
-int fdgfgh(info_t *info)
+int fdgfgh(inf12o_t *info)
 {
 	int i, built_in_ret = -1;
-	builtin_table builtintbl[] = {
+	buil212le builtintbl[] = {
 		{"exit", dfgfguy},
 		{"env", _mysda45dnv},
 		{"help", _myghhfghhelp},
-		{"history", _mydgfjkhry},
+		{"myhistro", _mydgfjkhry},
 		{"setenv", _mydsasaddsaenv},
 		{"unsetenv", _my121env},
 		{"cd", _mmghjyhjcd},
@@ -53,26 +51,25 @@ int fdgfgh(info_t *info)
 		{NULL, NULL}};
 
 	for (i = 0; builtintbl[i].type; i++)
-		if (_strcmpdassad(info->argv[0], builtintbl[i].type) == 0)
+		if (_strcmpdassad(info->aasdsadrv123[0], builtintbl[i].type) == 0)
 		{
-			info->line_count++;
+			info->line_csdasdaount++;
 			built_in_ret = builtintbl[i].func(info);
 			break;
 		}
 	return (built_in_ret);
 }
 
-
-void fjhdshf(info_t *info)
+void fjhdshf(inf12o_t *info)
 {
 	char *path = NULL;
 	int i, k;
 
-	info->path = info->argv[0];
-	if (info->linecount_flag == 1)
+	info->path123 = info->aasdsadrv123[0];
+	if (info->linesdasdacodunt_flag == 1)
 	{
-		info->line_count++;
-		info->linecount_flag = 0;
+		info->line_csdasdaount++;
+		info->linesdasdacodunt_flag = 0;
 	}
 	for (i = 0, k = 0; info->arg[i]; i++)
 		if (!is_dfsldel22im(info->arg[i], " \t\n"))
@@ -80,15 +77,15 @@ void fjhdshf(info_t *info)
 	if (!k)
 		return;
 
-	path = fds234(info, _gdsasadnv(info, "PATH="), info->argv[0]);
+	path = fds234(info, _gdsasadnv(info, "PATH="), info->aasdsadrv123[0]);
 	if (path)
 	{
-		info->path = path;
+		info->path123 = path;
 		dfbdfshj(info);
 	}
 	else
 	{
-		if ((int423erac12i2ve(info) || _gdsasadnv(info, "PATH=") || info->argv[0][0] == '/') && asdqwer(info, info->argv[0]))
+		if ((int423erac12i2ve(info) || _gdsasadnv(info, "PATH=") || info->aasdsadrv123[0][0] == '/') && asdqwer(info, info->aasdsadrv123[0]))
 			dfbdfshj(info);
 		else if (*(info->arg) != '\n')
 		{
@@ -98,28 +95,26 @@ void fjhdshf(info_t *info)
 	}
 }
 
-
-void dfbdfshj(info_t *info)
+void dfbdfshj(inf12o_t *info)
 {
 	pid_t child_pid;
 
 	child_pid = fork();
 	if (child_pid == -1)
 	{
-		
+
 		perror("Error:");
 		return;
 	}
 	if (child_pid == 0)
 	{
-		if (execve(info->path, info->argv, ge566viron(info)) == -1)
+		if (execve(info->path123, info->aasdsadrv123, ge566viron(info)) == -1)
 		{
 			fresdafo(info, 1);
 			if (errno == EACCES)
 				exit(126);
 			exit(1);
 		}
-		
 	}
 	else
 	{

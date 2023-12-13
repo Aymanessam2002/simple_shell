@@ -40,13 +40,7 @@ int _strcmpdassad(char *s1, char *s2)
 		return (*s1 < *s2 ? -1 : 1);
 }
 
-/**
- * sad_strcmp - checks if needle starts with haystack
- * @haystack: string to search
- * @needle: the substring to find
- *
- * Return: address of next char of haystack or NULL
- */
+
 char *sad_strcmp(const char *haystack, const char *needle)
 {
 	while (*needle)
@@ -55,13 +49,7 @@ char *sad_strcmp(const char *haystack, const char *needle)
 	return ((char *)haystack);
 }
 
-/**
- * _strcatasd - concatenates two strings
- * @dest: the destination buffer
- * @src: the source buffer
- *
- * Return: pointer to destination buffer
- */
+
 char *_strcatasd(char *dest, char *src)
 {
 	char *ret = dest;

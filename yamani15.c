@@ -1,14 +1,13 @@
 #include "shell.h"
 
-
 int _errahggfdftoi(char *s)
 {
 	int i = 0;
 	unsigned long int result = 0;
 
 	if (*s == '+')
-		s++;  
-	for (i = 0;  s[i] != '\0'; i++)
+		s++;
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
@@ -23,18 +22,16 @@ int _errahggfdftoi(char *s)
 	return (result);
 }
 
-
-void priadsasnt_error(info_t *info, char *estr)
+void priadsasnt_error(inf12o_t *info, char *estr)
 {
-	asdasd435(info->fname);
+	asdasd435(info->fnsdasadme);
 	asdasd435(": ");
-	prinsa20dsadt_d(info->line_count, STDERR_FILENO);
+	prinsa20dsadt_d(info->line_csdasdaount, STDERR_FILENO);
 	asdasd435(": ");
-	asdasd435(info->argv[0]);
+	asdasd435(info->aasdsadrv123[0]);
 	asdasd435(": ");
 	asdasd435(estr);
 }
-
 
 int prinsa20dsadt_d(int input, int fd)
 {
@@ -68,7 +65,6 @@ int prinsa20dsadt_d(int input, int fd)
 	return (count);
 }
 
-
 char *consadvsadadsnumber(long int num, int base, int flags)
 {
 	static char *array;
@@ -81,13 +77,13 @@ char *consadvsadadsnumber(long int num, int base, int flags)
 	{
 		n = -num;
 		sign = '-';
-
 	}
 	array = flags & H25 ? "0123456789abcdef" : "0123456789ABCDEF";
 	ptr = &buffer[49];
 	*ptr = '\0';
 
-	do	{
+	do
+	{
 		*--ptr = array[n % base];
 		n /= base;
 	} while (n != 0);

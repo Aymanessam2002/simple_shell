@@ -27,42 +27,40 @@
 #define AUU55 0
 #define AS99 0
 
-#define MOP78 ".simple_shell_history"
+#define MOP78 ".simll_myhistro"
 #define MOLP78 4096
 
 extern char **environ;
-
 
 typedef struct liststr
 {
 	int num;
 	char *str;
-	struct liststr *next;
-} list_t;
+	struct liststr *neko;
+} listlist65_t;
 
-
-typedef struct passinfo
+typedef struct passpas9
 {
 	char *arg;
-	char **argv;
-	char *path;
-	int argc;
-	unsigned int line_count;
+	char **aasdsadrv123;
+	char *path123;
+	int argc123;
+	unsigned int line_csdasdaount;
 	int err_num;
-	int linecount_flag;
-	char *fname;
-	list_t *env;
-	list_t *history;
-	list_t *alias;
+	int linesdasdacodunt_flag;
+	char *fnsdasadme;
+	listlist65_t *env;
+	listlist65_t *myhistro;
+	listlist65_t *alias;
 	char **environ;
 	int env_changed;
 	int status;
 
-	char **cmd_buf;	  
-	int cmd_buf_type; 
+	char **cmd_buf;
+	int cmd_buf_type;
 	int readfd;
 	int histcount;
-} info_t;
+} inf12o_t;
 
 #define INFO_INIT                                                               \
 	{                                                                           \
@@ -70,21 +68,20 @@ typedef struct passinfo
 			0, 0, 0                                                             \
 	}
 
-
 typedef struct builtin
 {
 	char *type;
-	int (*func)(info_t *);
-} builtin_table;
+	int (*func)(inf12o_t *);
+} buil212le;
 
-int assdfj(info_t *, char **);
-int fdgfgh(info_t *);
-void fjhdshf(info_t *);
-void dfbdfshj(info_t *);
+int assdfj(inf12o_t *, char **);
+int fdgfgh(inf12o_t *);
+void fjhdshf(inf12o_t *);
+void dfbdfshj(inf12o_t *);
 
-int asdqwer(info_t *, char *);
+int asdqwer(inf12o_t *, char *);
 char *er345(char *, int, int);
-char *fds234(info_t *, char *, char *);
+char *fds234(inf12o_t *, char *, char *);
 
 int sadf456(char **);
 
@@ -116,64 +113,64 @@ void *asddfng(void *, unsigned int, unsigned int);
 
 int bfree(void **);
 
-int int423erac12i2ve(info_t *);
+int int423erac12i2ve(inf12o_t *);
 int is_dfsldel22im(char, char *);
 int _isasdsadalpha(int);
 int _adsfdftoi(char *);
 
 int _errahggfdftoi(char *);
-void priadsasnt_error(info_t *, char *);
+void priadsasnt_error(inf12o_t *, char *);
 int prinsa20dsadt_d(int, int);
 char *consadvsadadsnumber(long int, int, int);
 void remov26565e_comments(char *);
 
-int dfgfguy(info_t *);
-int _mmghjyhjcd(info_t *);
-int _myghhfghhelp(info_t *);
+int dfgfguy(inf12o_t *);
+int _mmghjyhjcd(inf12o_t *);
+int _myghhfghhelp(inf12o_t *);
 
-int _mydgfjkhry(info_t *);
-int _mdfgdalfs(info_t *);
+int _mydgfjkhry(inf12o_t *);
+int _mdfgdalfs(inf12o_t *);
 
-ssize_t gfgdfgdfgput(info_t *);
-int _getline(info_t *, char **, size_t *);
+ssize_t gfgdfgdfgput(inf12o_t *);
+int _getline(inf12o_t *, char **, size_t *);
 void sigintHandler(int);
 
-void cleasdfo(info_t *);
-void sefsddsffo(info_t *, char **);
-void fresdafo(info_t *, int);
+void cleasdfo(inf12o_t *);
+void sefsddsffo(inf12o_t *, char **);
+void fresdafo(inf12o_t *, int);
 
-char *_gdsasadnv(info_t *, const char *);
-int _mysda45dnv(info_t *);
-int _mydsasaddsaenv(info_t *);
-int _my121env(info_t *);
-int popula223list(info_t *);
+char *_gdsasadnv(inf12o_t *, const char *);
+int _mysda45dnv(inf12o_t *);
+int _mydsasaddsaenv(inf12o_t *);
+int _my121env(inf12o_t *);
+int popula223list(inf12o_t *);
 
-char **ge566viron(info_t *);
-int _un99env(info_t *, char *);
-int _se9556nv(info_t *, char *, char *);
+char **ge566viron(inf12o_t *);
+int _un99env(inf12o_t *, char *);
+int _se9556nv(inf12o_t *, char *, char *);
 
-char *get5656ile(info_t *info);
-int wri6565ory(info_t *info);
-int rea96ory(info_t *info);
-int bu965st(info_t *info, char *buf, int linecount);
-int renumb3232tory(info_t *info);
+char *get5656ile(inf12o_t *info);
+int wri6565ory(inf12o_t *info);
+int rea96ory(inf12o_t *info);
+int bu965st(inf12o_t *info, char *buf, int linecount);
+int renumb3232tory(inf12o_t *info);
 
-list_t *ad656ode(list_t **, const char *, int);
-list_t *add5665end(list_t **, const char *, int);
-size_t pri6366str(const list_t *);
-int jasdhj5456(list_t **, unsigned int);
-void dgf3(list_t **);
+listlist65_t *ad656ode(listlist65_t **, const char *, int);
+listlist65_t *add5665end(listlist65_t **, const char *, int);
+size_t pri6366str(const listlist65_t *);
+int jasdhj5456(listlist65_t **, unsigned int);
+void dgf3(listlist65_t **);
 
-size_t as66(const list_t *);
-char **sd6(list_t *);
-size_t aiu12(const list_t *);
-list_t *oo22(list_t *, char *, char);
-ssize_t ll53(list_t *, list_t *);
+size_t as66(const listlist65_t *);
+char **sd6(listlist65_t *);
+size_t aiu12(const listlist65_t *);
+listlist65_t *oo22(listlist65_t *, char *, char);
+ssize_t ll53(listlist65_t *, listlist65_t *);
 
-int dfs21(info_t *, char *, size_t *);
-void dof5(info_t *, char *, size_t *, size_t, size_t);
-int ahh4(info_t *);
-int replyyu6ars(info_t *);
+int dfs21(inf12o_t *, char *, size_t *);
+void dof5(inf12o_t *, char *, size_t *, size_t, size_t);
+int ahh4(inf12o_t *);
+int replyyu6ars(inf12o_t *);
 int uyt12(char **, char *);
 
 #endif

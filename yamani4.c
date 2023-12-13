@@ -1,7 +1,7 @@
 #include "shell.h"
 
 
-char **ge566viron(info_t *info)
+char **ge566viron(inf12o_t *info)
 {
 	if (!info->environ || info->env_changed)
 	{
@@ -13,9 +13,9 @@ char **ge566viron(info_t *info)
 }
 
 
-int _un99env(info_t *info, char *var)
+int _un99env(inf12o_t *info, char *var)
 {
-	list_t *node = info->env;
+	listlist65_t *node = info->env;
 	size_t i = 0;
 	char *p;
 
@@ -32,17 +32,17 @@ int _un99env(info_t *info, char *var)
 			node = info->env;
 			continue;
 		}
-		node = node->next;
+		node = node->neko;
 		i++;
 	}
 	return (info->env_changed);
 }
 
 
-int _se9556nv(info_t *info, char *var, char *value)
+int _se9556nv(inf12o_t *info, char *var, char *value)
 {
 	char *buf = NULL;
-	list_t *node;
+	listlist65_t *node;
 	char *p;
 
 	if (!var || !value)
@@ -65,7 +65,7 @@ int _se9556nv(info_t *info, char *var, char *value)
 			info->env_changed = 1;
 			return (0);
 		}
-		node = node->next;
+		node = node->neko;
 	}
 	add5665end(&(info->env), buf, 0);
 	free(buf);

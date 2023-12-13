@@ -1,14 +1,14 @@
 #include "shell.h"
 
 
-int _mydgfjkhry(info_t *info)
+int _mydgfjkhry(inf12o_t *info)
 {
-	aiu12(info->history);
+	aiu12(info->myhistro);
 	return (0);
 }
 
 
-int unset_alias(info_t *info, char *str)
+int unset_alias(inf12o_t *info, char *str)
 {
 	char *p, c;
 	int ret;
@@ -25,7 +25,7 @@ int unset_alias(info_t *info, char *str)
 }
 
 
-int set_alias(info_t *info, char *str)
+int set_alias(inf12o_t *info, char *str)
 {
 	char *p;
 
@@ -40,7 +40,7 @@ int set_alias(info_t *info, char *str)
 }
 
 
-int print_alias(list_t *node)
+int print_alias(listlist65_t *node)
 {
 	char *p = NULL, *a = NULL;
 
@@ -58,29 +58,29 @@ int print_alias(list_t *node)
 }
 
 
-int _mdfgdalfs(info_t *info)
+int _mdfgdalfs(inf12o_t *info)
 {
 	int i = 0;
 	char *p = NULL;
-	list_t *node = NULL;
+	listlist65_t *node = NULL;
 
-	if (info->argc == 1)
+	if (info->argc123 == 1)
 	{
 		node = info->alias;
 		while (node)
 		{
 			print_alias(node);
-			node = node->next;
+			node = node->neko;
 		}
 		return (0);
 	}
-	for (i = 1; info->argv[i]; i++)
+	for (i = 1; info->aasdsadrv123[i]; i++)
 	{
-		p = _stsdasdarchr(info->argv[i], '=');
+		p = _stsdasdarchr(info->aasdsadrv123[i], '=');
 		if (p)
-			set_alias(info, info->argv[i]);
+			set_alias(info, info->aasdsadrv123[i]);
 		else
-			print_alias(oo22(info->alias, info->argv[i], '='));
+			print_alias(oo22(info->alias, info->aasdsadrv123[i], '='));
 	}
 
 	return (0);
