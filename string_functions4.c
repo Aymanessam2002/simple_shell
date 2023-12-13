@@ -1,11 +1,6 @@
 #include "shell.h"
 
-/**
- * **str324234tow - splits a string into words. Repeat delimiters are ignored
- * @str: the input string
- * @d: the delimeter string
- * Return: a pointer to an array of strings, or NULL on failure
- */
+
 
 char **str324234tow(char *str, char *d)
 {
@@ -48,12 +43,7 @@ char **str324234tow(char *str, char *d)
 	return (s);
 }
 
-/**
- * **str324234tow2 - splits a string into words
- * @str: the input string
- * @d: the delimeter
- * Return: a pointer to an array of strings, or NULL on failure
- */
+
 char **str324234tow2(char *str, char d)
 {
 	int i, j, k, m, numwords = 0;
