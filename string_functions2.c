@@ -1,12 +1,6 @@
 #include "shell.h"
 
-/**
- * _strcpyasdsd - copies a string
- * @dest: the destination
- * @src: the source
- *
- * Return: pointer to destination
- */
+
 char *_strcpyasdsd(char *dest, char *src)
 {
 	int i = 0;
@@ -22,12 +16,7 @@ char *_strcpyasdsd(char *dest, char *src)
 	return (dest);
 }
 
-/**
- * _strcpysdasd - duplicates a string
- * @str: the string to duplicate
- *
- * Return: pointer to the duplicated string
- */
+
 char *_strcpysdasd(const char *str)
 {
 	int length = 0;
@@ -45,12 +34,7 @@ char *_strcpysdasd(const char *str)
 	return (ret);
 }
 
-/**
- *_puasdtsasd - prints an input string
- *@str: the string to be printed
- *
- * Return: Nothing
- */
+
 void _puasdtsasd(char *str)
 {
 	int i = 0;
@@ -64,13 +48,7 @@ void _puasdtsasd(char *str)
 	}
 }
 
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
+
 int _putchar(char c)
 {
 	static int i;
